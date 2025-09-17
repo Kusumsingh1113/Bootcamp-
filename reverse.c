@@ -1,21 +1,14 @@
 #include<stdio.h>
+#include<string.h>
 void main()
 {
-    int a[100],i,j,n,temp;
-    printf("Enter the no. of elements: ");
-    scanf("%d",&n);
-    for(i=0;i<=n;i++)
+    char str[100],str1[100];
+    int i,len,f=0;
+    printf("enter string :");
+    scanf("%s",str);
+    len =strlen(str);
+    for(i=len;i>=0;i--)
     {
-        printf("Enter the array :");
-        scanf("%d",&a[i]);
-    }
-    for(i=0;i<=n;i++)
-    {
-        printf(" %d",a[i]);
-    }
-    
-    for(i=n;i>=0;i--)
-    {
-        printf(" \n%d",a[i]);
+        printf("%c",str[i]);
     }
 }
